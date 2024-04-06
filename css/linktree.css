@@ -1,0 +1,29 @@
+.linktree-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.linktree {
+  list-style: none;
+  padding: 0;
+}
+
+.linktree a {
+  display: inline-block;
+  text-decoration: none;
+  color: #680000;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  border: #680000 solid;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.linktree a:hover{
+  background-color: lightgray;
+}

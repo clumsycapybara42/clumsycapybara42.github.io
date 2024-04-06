@@ -1,0 +1,170 @@
+/* forces scroll bar */
+
+html {
+  overflow-y: scroll;
+}
+
+/*push footer to bottom*/
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* styling */
+
+.eo42 {
+  display: none;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.container {
+  max-width: 720px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* dropdown styling */
+
+.dropdown-menu {
+  position: relative;
+  width: fit-content;
+}
+
+.dropdown-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-content {
+  position: absolute;
+  width: 100%;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* language-selection styling */
+
+#language-selector {
+  width: 100px;
+}
+
+#language-selector .dropdown-content {
+  margin-top: 5px;
+  background-color: #fac87d;
+}
+
+#language-selector button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fac87d;
+  font-size: large;
+  border: none;
+}
+
+#language-selector button:hover {
+  background-color: #fbb040;
+  cursor: pointer;
+}
+
+/* header styling */
+
+header {
+  color: #680000;
+  font-size: large;
+  background-color: #fac87d;
+  /* border-bottom: #680000 solid; */
+}
+
+.header_nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+@media (max-width: 500px) {
+  header {
+    text-align: center;
+  }
+
+  .header_nav-bar {
+    flex-direction: column;
+  }
+
+  #language-selector {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* footer styling */
+
+footer {
+  color: #680000;
+  font-size: large;
+  background-color: #fac87d;
+  padding: 25px;
+}
+
+footer a {
+  color: #680000;
+  text-decoration: none;
+}
+
+.footer_nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar_item {
+  display: inline;
+  margin: 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 500px) {
+  footer {
+    text-align: center;
+  }
+
+  .footer_nav-bar {
+    flex-direction: column;
+  }
+
+  .footer_nav-bar ul {
+    margin-bottom: 20px;
+  }
+}
